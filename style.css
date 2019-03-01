@@ -1,0 +1,128 @@
+html, body {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+}
+.navbar {
+  background-color: #313639;
+  color: white;
+  line-height: 0;
+  margin: 0;
+}
+
+.navbar h1{
+  margin-left: 10px;
+  width: 80%;
+  display: inline-flex;
+  white-space: nowrap;
+}
+
+.navbar li{
+display: inline-block;
+padding-right: 10px;
+
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+}
+
+.navbar li a:hover {
+  color: #ffb834;
+  background-color: #313639;
+}
+
+.navbar ul {
+  float:right;
+}
+
+.hero-text {
+  color: white;
+  text-align: center;
+}
+
+.hero-image {
+  background: url(assets/portland-downtown.jpg);
+  height: 1000px;
+  margin-top: -21px;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.project-container {
+  width: 50%;
+}
+
+.screenshot {
+  width: 100%;
+}
+
+
+.tech-container {
+  display: flex;
+  align-items: center;
+}
+
+.tech-container p {
+  margin-right: 7px;
+}
+
+.stack {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tech-icon {
+  min-width: 78px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 7px 7px 0;
+}
+
+.tech-icon img {
+  height: 2em;
+}
+
+.tech-icon p {
+  margin: 0;
+}
+
+/*footer.row {
+  max-width: 100%;
+  height: auto;
+}
+
+#footer {
+  background-color: #232323;
+  color: white;
+  height: 125px;
+  padding: 10px;
+  text-align: center;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+}
+
+.social-container {
+    text-align: center;
+}
+
+.social-container>a {
+    margin: 0 20px;
+    color: white;
+}
+
+.copyright {
+    text-align: center;
+    color: white;
+    margin-top: 10px;;
+}
+
+.foot-mod {
+    margin: 5px 0 0 10px;
+}*/
