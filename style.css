@@ -52,8 +52,16 @@ padding-right: 10px;
   position: relative;
 }
 
-.project-container {
+main {
   width: 50%;
+  margin-left: 25%;
+}
+
+.project-container {
+  box-shadow: 7px 29px 65px 0px rgba(0,0,0,0.24);
+  width: 100%;
+  margin-top: 50px;
+  border-radius: 20px;
 }
 
 .screenshot {
@@ -91,7 +99,7 @@ padding-right: 10px;
   margin: 0;
 }
 
-/*footer.row {
+footer.row {
   max-width: 100%;
   height: auto;
 }
@@ -125,4 +133,4 @@ padding-right: 10px;
 
 .foot-mod {
     margin: 5px 0 0 10px;
-}*/
+}
