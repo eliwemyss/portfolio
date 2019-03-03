@@ -4,7 +4,7 @@ html, body {
   margin: 0;
 }
 .navbar {
-  background-color: #313639;
+  background-color: #2B4141;
   color: white;
   line-height: 0;
   margin: 0;
@@ -37,14 +37,15 @@ padding-right: 10px;
   float:right;
 }
 
-.hero-text {
-  color: white;
-  text-align: center;
+.hero-container {
+  margin: 0;
+  height: auto;
+  width: 100%;
 }
 
 .hero-image {
   background: url(assets/portland-downtown.jpg);
-  height: 1000px;
+  height: 500px;
   margin-top: -21px;
   background-position: 50%;
   background-repeat: no-repeat;
@@ -52,16 +53,23 @@ padding-right: 10px;
   position: relative;
 }
 
+.hero-text {
+  margin-left: 33.3%;
+  height: auto;
+  width: 33.3%;
+  background-color: grey;
+}
+
 main {
-  width: 50%;
-  margin-left: 25%;
+  width: 80%;
+  margin-left: 10%;
 }
 
 .project-container {
   box-shadow: 7px 29px 65px 0px rgba(0,0,0,0.24);
   width: 100%;
   margin-top: 50px;
-  border-radius: 20px;
+  margin-bottom: 50px;
 }
 
 .screenshot {
@@ -99,13 +107,29 @@ main {
   margin: 0;
 }
 
+.project-links {
+  margin: 30px 30px 60px ;
+  height: 120px;
+}
+
+.link {
+  background-color: #0EB1D2;
+  box-shadow: 0 5px 0 #34E4EA;
+  border-radius: 10px;
+  color: white;
+  padding: 1em 1.5em;
+  position: relative;
+  text-decoration: none;
+}
+
 footer.row {
   max-width: 100%;
   height: auto;
 }
 
 #footer {
-  background-color: #232323;
+  margin-top: 150px;
+  background-color: #8AB9B5;
   color: white;
   height: 125px;
   padding: 10px;
