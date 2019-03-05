@@ -107,13 +107,19 @@ h3 {
   max-width: 960px;
   text-align: center;
   padding-bottom: 1rem;
-/*  border: 2px solid #1a2537;
-  border-radius: 12px;*/
+  border: 2px solid #1a2537;
+  border-radius: 12px;
 }
 
-.skills-icons {
-  display: inline-flex;
+
+.skill-icon {
+  min-width: 78px;
 }
+
+.skill-icon img {
+  height: 3em;
+}
+
 
 #projects h2 {
   color: #fff;
@@ -139,6 +145,7 @@ p {
   margin: 10px auto;
   font-weight: 600;
   line-height: 1.7;
+  padding: 10px;
 }
 .project-container {
   box-shadow: 7px 29px 65px 0px rgba(0,0,0,0.24);
@@ -267,9 +274,6 @@ footer.row {
     margin-top: 10px;;
 }
 
-.foot-mod {
-    margin: 5px 0 0 10px;
-}
 
 
 
@@ -282,8 +286,10 @@ footer.row {
   .headline {
     top: 30%;
   }
-
-  .project-box {
+  .icon-list {
+    display: inline-flex;
+  }
+  .project-container {
     margin: 1.5rem auto;
   }
 
@@ -307,9 +313,20 @@ footer.row {
   label {
     display: none;
   }
+}
 
 @media (min-width: 1350px) {
   .hero-text {
       margin: 150px auto 0px 33%;
+  }
+}
+
+@media (max-width: 767px) {
+  .project-container {
+    width: 100%;
+  }
+
+  .skills {
+    border: none;
   }
 }
