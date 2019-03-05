@@ -8,25 +8,44 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-	<!-- Navigation -->
-	<nav class="navbar">
-		<h1>Eli Wemyss</h1>
-        <ul class="nav navbar-nav">	
-          <li><a href="#">About</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
+    <div class="container">
+      <!-- HEADER -->
+      <header role="banner">
+        <nav role="navigation">
+          <input type="checkbox" id="menu" />
+          <label for="menu"><i class="fas fa-2x fa-bars"></i></label>
+          <div class="menu-content">
+            <ul>
+              <li>
+                <a href="#about"></i> About</a>
+              </li>
+              <li>
+                <a href="#projects">Projects</a>
+              </li>
+              <li>
+                <a href="#contact">Contact</a>
+              </li>
+            </ul>
+            <div class="close"></div>
+          </div>
+        </nav>
+      </header>
+
     <!-- Hero -->
-<!--     <div class="hero-container">
- 		<div class="hero-image">
- 				<h1 class="hero-text">My awesome portfolio!</h1>
- 		</div>
- 	</div> -->
+      <main class="content" role="main">
+        <!-- HOME PAGE -->
+        <a href="javascript:" id="return-to-top"><i class="fas fa-arrow-alt-circle-up"></i></a>
+        <section id="home">
+          <div class="hero-text">
+            <h1>
+              <span class="my-name">Eli Wemyss</span> <br/>
+              <span class="my-title">Web Developer</span>
+            </h1>
+          </div>
+        </section>
 
     <!-- About -->
-    <main role="main">
-    	<section>
+    	<section id="about">
 	    	<h2>About</h2>
 		    	<p>
 					Hi, my name is Eli Wemyss, and I'm a FullStack Web Developer based in Portland, Oregon. I specialize in the MERN stack.
@@ -34,24 +53,33 @@
 				<p>
 					My interests include cycling, skiing, and music.
 				</p>
+        <div class="skills">
+          <h3>Skills</h3>
+            <div class="skills-icons">
+              <div class="tech-icon"><img title="html5" src="assets/html5.svg">HTML5</div>
+              <div class="tech-icon"><img title="CSS3" src="assets/css-3.svg">CSS3</div>
+              <div class="tech-icon"><img title="JavaScript" src="assets/javascript.svg">JavaScript</div>
+              <div class="tech-icon"><img title="MongoDB" src="assets/mongodb.svg">MongoDB</div>
+              <div class="tech-icon"><img title="Express.js" src="assets/express.svg">Express</div>
+              <div class="tech-icon"><img title="React.js" src="assets/react.svg">React</div>
+              <div class="tech-icon"><img title="Node.js" src="assets/nodejs.svg">Node</div>
+              <div class="tech-icon"><img title="mocha.js" src="assets/mocha.svg">Mocha</div>
+              <div class="tech-icon"><img title="chai.js" src="assets/chaijs.svg">Chai</div>
+            </div>
+        </div>
 
 
     	</section>
     
     <!-- Projects -->
 
-    	<section>
+    	<section id="projects">
     		<h2>Projects</h2>
     		<div class="project-container left">
     				<img class="screenshot" src="assets/declutterly.png">
-    		<div>
-    			<h3>Description:</h3>
     			<p>
  					After the recent trend of minimalism and decluttering, I decided to make an app to help keep track of your household inventory. This app allows users to add items in their household and decide whether to keep or discard.
     			</p>
-
-    		</div>
-            <div><b>Tech Stack Used: </b></div>
             	<div class="tech-container">
             		<div class="stack">
 	                  <div class="tech-icon"><img title="React.js" src="assets/react.svg"></div>
@@ -67,20 +95,15 @@
                	 	</div>
               	</div>
 	            <div class="project-links">
-	            	<h3>Links:</h3>
-	               	<a class="link" href="https://safe-river-93282.herokuapp.com/">Live</a>
-	               	<a class="link" href="https://github.com/eliwemyss/declutterly-client">GitHub</a>
+	               	<a class="link" href="https://safe-river-93282.herokuapp.com/" target="_blank">Live</a>
+	               	<a class="link" href="https://github.com/eliwemyss/declutterly-client" target="_blank">GitHub</a>
 	            </div>
     		</div>
     		<div class="project-container left">
     				<img class="screenshot" src="assets/score-prediction.png">
-    		<div>
-    			<h3>Description:</h3>
     			<p>
     				In this app, users are able to make predictions on upcoming college football matchups. They are able to see their predictions, and get a feed of othr users' scores so they can compare.
     			</p>
-    		</div>
-            <div><b>Tech Stack Used: </b></div>
             	<div class="tech-container">
             		<div class="stack">
 	                  <div class="tech-icon"><img title="Node.js" src="assets/nodejs.svg"></div>
@@ -96,20 +119,15 @@
 
               	</div>
 	            <div class="project-links">
-	                <a class="link" href="https://eliwemyss.github.io/weather-song-search/">Live</a>
-	            	<a class="link" href="https://github.com/eliwemyss/weather-song-search">GitHub</a>
+	                <a class="link" href="https://eliwemyss.github.io/weather-song-search/" target="_blank">Live</a>
+	            	<a class="link" href="https://github.com/eliwemyss/weather-song-search" target="_blank">GitHub</a>
 	            </div>
     		</div>
-    		<div class="project-container left">
+    		<div class="project-container">
 	    		<img class="screenshot" src="assets/weather-song-search.png">
-		    		<div>
-		    			<h3>Description:</h3>
 		    			<p>
 		    				It seems like most people make a weather app of some sort. I decided to as well, but with a slight twist. Users can input their zip code, and not only get the weather, but also a playlist of songs.
 		    			</p>
-
-    				</div>
-            	<div><b>Tech Stack Used: </b></div>
             		<div class="tech-container">
 	            		<div class="stack">
 		                  <div class="tech-icon"><img title="html5" src="assets/html5.svg"></div>
@@ -118,20 +136,21 @@
 	               	 	</div>
 	              	</div>
 	               	 <div class="project-links">
-	               	 	<a class="link" href="https://eliwemyss.github.io/weather-song-search/">Live</a>
-	               	 	<a class="link" href="https://github.com/eliwemyss/weather-song-search">GitHub</a>
+	               	 	<a class="link" href="https://eliwemyss.github.io/weather-song-search/" target="_blank">Live</a>
+	               	 	<a class="link" href="https://github.com/eliwemyss/weather-song-search" target="_blank">GitHub</a>
 	               	 </div>
 	    		</div>
     	</section>	
     </main>
     <!-- Footer and Contact -->
+    <section id="contact">
       <footer id="footer" role="contentinfo">
           <div class="foot-mod">
                <div class="social-container">
                   <a href="https://www.linkedin.com/in/eli-wemyss-16285682/" target="_blank">
                        <i class="fab fa-linkedin-in fa-2x"></i>
                   </a>
-                  <a href="https://github.com/eliwemyss"target="_blank">
+                  <a href="https://github.com/eliwemyss" target="_blank">
                        <i class="fab fa-github fa-2x"></i>
                   </a>
                     <a href="#">
@@ -143,5 +162,12 @@
                 </div>
             </div>
   </footer>
+</section>
+  	<script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous">
+    </script>
+    <script src="index.js"></script>
 </body>
 </html>
