@@ -10,7 +10,7 @@ $(document).ready(() => {
 });
 
 $(window).scroll(function() {
-    if ($(this).scrollTop() >= 50) {        
+    if ($(this).scrollTop() >= 50 && screen.width > 768) {        
         $('#return-to-top').fadeIn(200);    
     } else {
         $('#return-to-top').fadeOut(200);   
