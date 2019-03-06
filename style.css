@@ -274,7 +274,7 @@ footer.row {
 
   li {
     float: left;
-    width: 7vw;
+    width: 10vw;
   }
 
   li a {
@@ -301,6 +301,7 @@ footer.row {
 }
 
 @media (max-width: 767px) {
+  .
   .project-container {
     width: 100%;
   }
