@@ -21,3 +21,11 @@ $('#return-to-top').click(function() {
         scrollTop : 0                       
     }, 500);
 });
+
+$("nav").find("a").click(function(e) {
+    e.preventDefault();
+    var section = $(this).attr("href");
+    $("html, body").animate({
+        scrollTop: $(section).offset().top
+    });
+});
