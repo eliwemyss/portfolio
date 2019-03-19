@@ -83,7 +83,7 @@ input:checked ~ .menu-content {
     align-items: center;
     text-align: center;
     color: #fff;
-    background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),url(assets/portland-downtown.jpg);
+    background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url(assets/portland-downtown.jpg);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
